@@ -1,0 +1,8 @@
+name: D8 training learning module
+description: This is demo module for D8 learning
+package: custom
+version: 8.x-1.0
+dependencies[]:
+  - big_pipe
+type: module
+core: 8.x

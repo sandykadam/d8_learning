@@ -1,0 +1,5 @@
+action.admin:
+  title: Actions Demo
+  description: 'This is custom setting form'
+  parent: system.admin_config_development
+  route_name: d8_training.node_list

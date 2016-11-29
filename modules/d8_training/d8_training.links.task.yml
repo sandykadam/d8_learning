@@ -1,0 +1,5 @@
+d8_training.menu1:
+  title: 'Home'
+  route_name: d8_training.node_list
+  base_route: d8_training.node_list
+  weight: 0

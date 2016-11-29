@@ -1,0 +1,5 @@
+d8_training.node_add:
+  title: 'Add Content demo'
+  route_name: entity.taxonomy_vocabulary.add_form
+  appears_on:
+    - 'd8_training.node_list'
