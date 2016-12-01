@@ -10,9 +10,29 @@ d8_training.node_details:
     _controller: \Drupal\d8_training\Controller\NodelistingController::node_details
   requirements:
     _permission: 'access content'
+    _query_siteid_check: 'TRUE'
 d8_training.node_content:
   path: 'list/node/{node}'
   defaults:
     _controller: \Drupal\d8_training\Controller\NodelistingController::node_content
+  requirements:
+    _permission: 'access content'
+d8_training.example_form:
+  path: '/example-form'
+  defaults:
+    _form: Drupal\d8_training\Form\ExampleForm
+    _title: Example Form
+  requirements:
+    _permission: 'access content'
+d8_training.example_form_thankyou:
+  path: '/example-form-thankyou'
+  defaults:
+    _controller: \Drupal\d8_training\Controller\ExampleformController::thankyouMessage
+  requirements:
+    _permission: 'access content'
+d8_training.site_config:
+  path: '/site-config'
+  defaults:
+    _form: \Drupal\d8_training\Form\SiteconfigForm
   requirements:
     _permission: 'access content'

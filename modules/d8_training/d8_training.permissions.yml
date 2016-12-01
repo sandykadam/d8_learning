@@ -1,0 +1,6 @@
+access d8_training content:
+  title: 'Access all training content'
+  description: 'Access to all training content'
+
+permission_callbacks:
+  - Drupal\d8_training\Controller\NodelistingPermissions::getPermissions

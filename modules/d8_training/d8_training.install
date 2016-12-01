@@ -1,0 +1,32 @@
+<?php
+
+function d8_training_schema() {
+  $schema['user_table'] = array(
+    // Example (partial) specification for table "node".
+    'description' => 'The base table for nodes.',
+    'fields' => array(
+      'first_name' => array(
+        'description' => 'The {user_table} of this node.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'last_name' => array(
+        'description' => 'The title of this node, always treated as non-markup plain text.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+       'uid' => array(
+        'description' => 'The primary identifier for a node.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('uid'),
+  );
+  return $schema;
+}

@@ -1,0 +1,23 @@
+<?php
+
+function d8_training_theme($existing, $type, $theme, $path) {
+	
+	return array(
+		'weather_widget' => array(
+			'variables' => array(
+				'weather_data' => NULL,
+			)
+		),
+	);
+}
+
+/*
+function d8_training_page_attachments_alter() {
+	$request = \Drupal::request();
+	$path_info = $request->getPathInfo();
+
+	if(strpos($path_info['path'], '/node')) {
+		$attachments['library'][] = 'd8_training/weather_widget'
+	}
+}
+*/
