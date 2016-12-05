@@ -1,0 +1,18 @@
+name: d8training
+type: theme
+description: This is training Drupal8 theme
+package: Other
+core: 8.x
+libraries:
+  - d8training/global-styling
+
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  header: Header
+  highlight: Highlight
+  content: Content
+  footer: Footer
+  right: Right
+  left: Left

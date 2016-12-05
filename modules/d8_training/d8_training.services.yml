@@ -13,3 +13,6 @@ services:
     class: Drupal\d8_training\EventSubscriber\EventManager
     tags:
       - { name: event_subscriber }
+  d8_training.latest_articles:
+    class: Drupal\d8_training\LatestArticles
+    arguments: ['@database']

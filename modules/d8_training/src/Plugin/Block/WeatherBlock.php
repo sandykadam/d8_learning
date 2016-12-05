@@ -64,8 +64,9 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
 
   public function build() {
   	$data_display='';
+    $weather_data =array();
   	$city_name = $this->configuration['city_name'];
-  	$weather_data = Json::decode($this->open_weather_forcaster->fetchWeatherData($city_name));
+  //	$weather_data = Json::decode($this->open_weather_forcaster->fetchWeatherData($city_name));
   	$build = [];
   	$build['weather_block'] = array(
   		'#theme' => 'weather_widget',
